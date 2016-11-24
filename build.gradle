@@ -15,4 +15,5 @@ dependencies {
     compile 'com.hubspot.dropwizard:dropwizard-guice:1.0.0.2'
 
     testCompile 'junit:junit:4.11'
+    testCompile 'org.meanbean:meanbean:2.0.3'
 }
