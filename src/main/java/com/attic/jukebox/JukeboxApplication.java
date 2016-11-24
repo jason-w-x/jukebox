@@ -1,6 +1,6 @@
 package com.attic.jukebox;
 
-import com.attic.jukebox.server.resources.JukeboxResource;
+import com.attic.jukebox.server.resources.JukeboxPlaylistResource;
 import com.hubspot.dropwizard.guice.GuiceBundle;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
@@ -14,7 +14,7 @@ public class JukeboxApplication extends Application<JukeboxAppConfiguration> {
 
     @Override
     public void run(final JukeboxAppConfiguration configuration, final Environment environment) throws Exception {
-        environment.jersey().register(new JukeboxResource(configuration.getTemplate(), configuration.getDefaultName()));
+        environment.jersey().register(new JukeboxPlaylistResource());
     }
 
     public static void main(String[] args) throws Exception {
