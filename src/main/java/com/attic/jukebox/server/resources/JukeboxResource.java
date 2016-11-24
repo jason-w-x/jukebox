@@ -1,6 +1,6 @@
-package com.attic.jukebox.resources;
+package com.attic.jukebox.server.resources;
 
-import com.attic.jukebox.api.Saying;
+import com.attic.jukebox.server.api.Saying;
 import com.codahale.metrics.annotation.Timed;
 
 import javax.ws.rs.GET;
