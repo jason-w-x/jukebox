@@ -1,6 +1,7 @@
 group 'attic'
 version '1.0-SNAPSHOT'
 
+apply plugin: 'idea'
 apply plugin: 'java'
 
 sourceCompatibility = 1.8
@@ -10,9 +11,10 @@ repositories {
 }
 
 dependencies {
-    compile 'io.dropwizard:dropwizard-core:1.0.5'
     compile 'com.google.inject:guice:4.0'
     compile 'com.hubspot.dropwizard:dropwizard-guice:1.0.0.2'
+    compile 'io.dropwizard:dropwizard-core:1.0.5'
+    compile 'org.mongodb.morphia:morphia:1.2.1'
 
     testCompile 'junit:junit:4.11'
     testCompile 'org.meanbean:meanbean:2.0.3'
