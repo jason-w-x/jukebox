@@ -1,6 +1,6 @@
 package com.attic.jukebox.server.resources;
 
-import com.attic.jukebox.server.inventory.Playlist;
+import com.attic.jukebox.server.inventory.domain.Playlist;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

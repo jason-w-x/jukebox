@@ -1,4 +1,4 @@
-package com.attic.jukebox.server.inventory;
+package com.attic.jukebox.server.inventory.domain;
 
 import org.junit.Test;
 import org.meanbean.test.BeanTester;

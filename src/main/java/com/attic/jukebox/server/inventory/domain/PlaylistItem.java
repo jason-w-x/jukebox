@@ -1,4 +1,4 @@
-package com.attic.jukebox.server.inventory;
+package com.attic.jukebox.server.inventory.domain;
 
 public class PlaylistItem {
     private long id;
