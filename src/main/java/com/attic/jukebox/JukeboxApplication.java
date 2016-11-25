@@ -9,7 +9,10 @@ import io.dropwizard.setup.Environment;
 public class JukeboxApplication extends Application<JukeboxAppConfiguration> {
     @Override
     public void initialize(final Bootstrap<JukeboxAppConfiguration> bootstrap) {
-        bootstrap.addBundle(GuiceBundle.<JukeboxAppConfiguration>newBuilder().addModule(new JukeboxModule()).setConfigClass(JukeboxAppConfiguration.class).build());
+        bootstrap.addBundle(GuiceBundle.<JukeboxAppConfiguration>newBuilder().addModule(new JukeboxModule())
+                                    .setConfigClass(JukeboxAppConfiguration.class)
+                                    .setInjectorFactory(new GovernatorInjectorFactory())
+                                    .build());
     }
 
     @Override

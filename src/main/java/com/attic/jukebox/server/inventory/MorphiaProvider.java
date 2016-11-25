@@ -2,8 +2,10 @@ package com.attic.jukebox.server.inventory;
 
 import com.attic.jukebox.server.inventory.domain.Playlist;
 import com.google.inject.Provider;
+import com.netflix.governator.guice.lazy.LazySingleton;
 import org.mongodb.morphia.Morphia;
 
+@LazySingleton
 public class MorphiaProvider implements Provider<Morphia> {
 
     @Override

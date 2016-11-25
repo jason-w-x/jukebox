@@ -13,6 +13,7 @@ repositories {
 dependencies {
     compile 'com.google.inject:guice:4.0'
     compile 'com.hubspot.dropwizard:dropwizard-guice:1.0.0.2'
+    compile 'com.netflix.governator:governator-core:1.15.9'
     compile 'io.dropwizard:dropwizard-core:1.0.5'
     compile 'org.mongodb.morphia:morphia:1.2.1'
 
