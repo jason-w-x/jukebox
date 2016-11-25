@@ -17,7 +17,7 @@ public class JukeboxApplication extends Application<JukeboxAppConfiguration> {
 
     @Override
     public void run(final JukeboxAppConfiguration configuration, final Environment environment) throws Exception {
-        environment.jersey().register(new JukeboxPlaylistResource());
+        environment.jersey().register(JukeboxPlaylistResource.class);
     }
 
     public static void main(String[] args) throws Exception {

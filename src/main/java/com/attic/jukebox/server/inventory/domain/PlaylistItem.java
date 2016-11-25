@@ -1,5 +1,8 @@
 package com.attic.jukebox.server.inventory.domain;
 
+import org.mongodb.morphia.annotations.Embedded;
+
+@Embedded
 public class PlaylistItem {
     private long id;
 

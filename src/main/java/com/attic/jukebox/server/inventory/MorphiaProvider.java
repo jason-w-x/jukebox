@@ -12,6 +12,7 @@ public class MorphiaProvider implements Provider<Morphia> {
     public Morphia get() {
         final Morphia morphia = new Morphia();
         morphia.mapPackageFromClass(Playlist.class);
+        morphia.getMapper().getOptions().setStoreEmpties(true);
         return morphia;
     }
 }
