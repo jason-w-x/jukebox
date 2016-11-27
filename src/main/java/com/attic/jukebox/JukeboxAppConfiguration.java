@@ -9,7 +9,6 @@ public class JukeboxAppConfiguration extends Configuration {
     @NotEmpty
     private String dbName;
 
-
     @JsonProperty
     public String getDbName() {
         return dbName;
